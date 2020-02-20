@@ -83,7 +83,7 @@ for(let i=0;i<videoP.length;i++){
         res += 'Present : '+ videoP[i][dtSelf[1]]  +'\n\r'
         res += 'Room : \n\r'
         for(let k=0;k<videoP[i][dtSelf[2]].length;k++){ 
-           res += JSON.stringify(videoP[i][dtSelf[2]][k]) +'\n\r'
+           res += JSON.stringify(videoP[i][dtSelf[2]][k]) +'\n\r' 
         }
     }
     console.log(res)
