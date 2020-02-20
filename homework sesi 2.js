@@ -8,7 +8,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
     {
@@ -20,7 +20,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
     {
@@ -32,7 +32,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
     {
@@ -44,7 +44,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
     {
@@ -56,7 +56,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
     {
@@ -68,7 +68,7 @@ const videoData = [
             {conservatory: false},
             {'dining room': false},
             {'billiard room': false},
-            {librabry: false},
+            {library: false},
         ]
     },
 ]
@@ -83,11 +83,17 @@ for(let i=0;i<videoP.length;i++){
         res += 'Present : '+ videoP[i][dtSelf[1]]  +'\n\r'
         res += 'Room : \n\r'
         for(let k=0;k<videoP[i][dtSelf[2]].length;k++){ 
-           res += JSON.stringify(videoP[i][dtSelf[2]][k]) +'\n\r' 
+            
+            res += dtRoom[k]+' = '+ videoP[i][dtSelf[2]][k][dtRoom[k]] +'\n\r' 
         }
+        res += '------------------------------------------------------ \n\r'
     }
     console.log(res)
 }
+
+
+
+
 
 
 
